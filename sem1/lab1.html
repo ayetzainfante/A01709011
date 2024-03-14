@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página</title>
+    <link rel="stylesheet" type="text/css" href="lab3.css">
+
 </head>
 <body>
     <header>
@@ -46,48 +48,67 @@
     <section>
         <h2>Seccion de preguntas a responder</h2>
             <li>¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: El Internet es la infraestructura detras de cables, routers y servidores que permite la conectividad global, mientras que la World Wide Web es un servicio específico en Internet que proporciona acceso a páginas web y otros recursos multimedia a través de navegadores web.</p>
             <li>¿Cuáles son las partes de un URL?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Protocolo (http://), nombre de dominio(.com), subdominio (www, este es opcional), ruta(Es la ubicación específica del recurso en el servidor, es decir el URL) y fragmento(Es una referencia a una ubicación específica dentro del recurso, como un marcador en una página web, # seguido del fragmento.).</p>
             <li>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Estos métodos proporcionan una forma estándarizada de interactuar con recursos en servidores web, lo que permite a los clientes (navegadores, aplicaciones, etc.) realizar una amplia variedad de acciones en la web de manera consistente y segura.
+            <p>GET: Solicita datos.</p>
+            <p> HEAD: Solicita solo encabezados de respuesta.</p>
+            <p> POST: Envía datos al servidor.</p>
+            <p> PUT: Reemplaza completamente un recurso.</p>
+            <p> PATCH: Aplica modificaciones parciales. </p>
+            <p> DELETE: Elimina un recurso. </p>
             <li>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Al enviar datos sensibles como un usuario y contraseña, es mejor utilizar el método POST debido a su capacidad para enviar datos de forma segura y evitar exponer información confidencial en la URL.</p>
             <li>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Cuando abres una página web en tu navegador escribiendo la dirección en la barra de búsqueda y presionas "Enter", el navegador utiliza el método GET para solicitar la página al servidor. GET es como una solicitud de información: le pide al servidor que te envíe la página web y todos sus elementos, como imágenes y texto, para que puedas verlos en tu navegador.</p>
             <li>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Significa que el servidor ha recibido y procesado correctamente la solicitud del cliente, y está devolviendo el contenido solicitado, por lo tanto no ocurre ningun error.</p>
             <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li>
-            <p>Respuesta: .</p>
+            <p>Respuecsta: Sí, es responsabilidad del desarrollador corregir un sitio web si un usuario reporta un error 404. El error 404 indica que el servidor no pudo encontrar el recurso solicitado, lo que generalmente significa que la página web o el archivo no existe en la ubicación especificada.</p>
             <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Sí, es responsabilidad del desarrollador corregir un sitio web si un usuario reporta un error 500. El error 500, también conocido como "Error interno del servidor", indica que hubo un problema en el servidor mientras procesaba la solicitud del usuario. Este tipo de error no se debe a un problema con la solicitud del cliente, sino a un problema interno en el servidor.</p>
             <li>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Cuando un atributo o elemento HTML5 está depreciado o desaprobado, significa que se considera obsoleto y se desaconseja su uso en el desarrollo de nuevas páginas web. Algunos elementos de HTML 4 que están desaprobados en HTML5 incluyen font, center, frame, frameset, noframes, applet, y acronym. Su uso puede causar problemas de compatibilidad y no es recomendado para garantizar el cumplimiento de los estándares web modernos.</p>
             <li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: HTML5 es una versión mejorada de HTML4. Tiene nuevas herramientas para hacer páginas web más bonitas, como añadir música o videos sin necesidad de programas externos, dibujar gráficos, y hacer formularios más fáciles de usar. También ayuda a que las páginas sean más fáciles de encontrar en Internet y más accesibles para personas con discapacidades.</p>
             <li>¿Qué componentes de estructura y estilo tiene una tabla?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta:</p>
+            <P>Componentes de estructura: table( Este elemento define la tabla en sí misma), tr(Representa una fila dentro de la tabla.), td(Define una celda de datos en una fila.) y th(: Define una celda de encabezado en una fila. )</P>
+            <p>Componentes de estilo: CSS(Se utiliza para aplicar estilos visuales a la tabla y sus elementos, como colores de fondo, bordes, márgenes, etc.) y atributos de estilp HTML(ej. style="background-color: #ffffff;). </p>
+            <p>Otros elementos basicos que puede contener una tabla son: caption, colgroup, col, thead, tbody, tfoot.</p>
             <li>¿Cuáles son los principales controles de una forma HTML5?</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Los principales controles de formulario en HTML5 incluyen input, textarea, select y button, estos elementos permiten a los usuarios ingresar y seleccionar datos en un formulario web; al igual que HTML5 introduce nuevos tipos de entrada y atributos de validación para mejorar la experiencia del usuario y la funcionalidad de los formularios.</p>
             <li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: Tiene 538 de 571.</p>
             <h2>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h2>
             <li>¿Cuál es el ciclo de vida de los sistemas de información? </li>
-            <p>Respuesta: .</p>
+            <p>Respuesta: El ciclo de vida de los sistemas de información abarca las etapas de identificación de necesidades y oportunidades, análisis, diseño, desarrollo e implementación, operación y mantenimiento, y finalmente, retiro. Comienza con la identificación de las necesidades del negocio, seguida del análisis detallado de requisitos, el diseño de la arquitectura del sistema, la construcción del sistema, su operación y mantenimiento continuo, y concluye con el retiro del sistema cuando ya no es útil o efectivo.</p>
             <li>¿Cuál es el ciclo de desarrollo de sistemas de información?</li>
-            <p>Respuesta: .</p>
-
+            <p>Respuesta: El ciclo de desarrollo de sistemas de información, también conocido como ciclo de vida del desarrollo de software, consta de las siguientes etapas: requerimientos, diseño, desarrollo, pruebas, implementación y mantenimiento. Comienza con la recopilación de requisitos, seguida del diseño del sistema, el desarrollo del software, pruebas exhaustivas, implementación en el entorno operativo del cliente y mantenimiento continuo para corregir errores y realizar mejoras. Este ciclo puede variar según la metodología utilizada, como el modelo en cascada o metodologías ágiles como Scrum y DevOps.</p>
+             
         </ul>
     </section>
-
-
 
     <section>
         <h2>Contacto</h2>
         <p>Email: a01709011@tec.com.mx</p>
         <p>Matricula: A01709011</p>
-        <p>Teléfono: 742-117-5544</p>
+        <p>Teléfono: 742-187-5564</p>
     </section>
+
+    <section>
+        <h2>Preguntas Lab2 (CSS)</h2>
+        <li>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </li>
+        <p>Respuesta: Su uso debe ser moderado y reservado para casos específicos; de lo contrario, el código puede tener fallas y ser difícil de mantener, esto se debe a que puede resultar en reglas difíciles de modificar y problemas de especificidad en cascada.</p>
+        <li>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</li>
+        <p>Respuesta: Elegir una imagen de fondo en una página web es importante por varias razones; la imagen no debe distraer o dificultar la lectura del contenido, debe verse bien en diferentes dispositivos y cargarse rápidamente; también debe ser accesible para todos los usuarios y complementar el diseño general de la página.</p>
+        <li>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</li>
+        <p>Respuesta: Al momento de elegir las unidades de una propiedad de estilo se debe pensar bien en que es lo que se necesita o requiere, dependiendo de lo que se este disenando y que quieras que se vea en diferentes dispositivos; ya que los % son buenos para hacer diseños que se ajusten al tamaño de la ventana o el contenedor, los px son para tener control exacto sobre el tamaño y la posición de los elementos; y los pt son más para cosas impresas y medidas físicas concretas.</p>
+        <li>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</li>
+        <p>Respuesta: Usar una versión minimizada del CSS hace que el sitio cargue más rápido porque el archivo es más pequeño; esto significa menos tiempo de espera para los usuarios y menos estrés para el servidor; además, el navegador puede procesarlo más rápido, lo que hace que la experiencia de navegación sea más fluida. </p>
+    </section>    
     
     <section>
         <h2>Contáctame</h2>
@@ -105,10 +126,23 @@
         </form>
     </section>
     
-
     <footer>
-        <p>Creado por Ayetza Yunnuen Infante Garcia con HTML.</p>
+        <p>Creado por Ayetza Yunnuen Infante Garcia con HTML y CSS.</p>
         <p>Utilice la plataforma de VSCode para crear esta pagina web</p>
     </footer>
 </body>
 </html>
+
+    <footer>
+        <h2>Referencias</h2>
+        <p>What is the difference between the internet and the world wide web? (n.d.). Retrieved from https://www.bbc.co.uk/newsround/av/47523993</p>
+        <p>MozDevNet. (n.d.). ¿Qué es una URL? - Aprende desarrollo web: MDN. Retrieved from https://developer.mozilla.org/es/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL</p>
+        <p>MozDevNet. (n.d.). Métodos de petición HTTP - HTTP: MDN. Retrieved from https://developer.mozilla.org/es/docs/Web/HTTP/Methods</p>
+        <p>Lista de códigos de estado HTTP ? Códigos de error HTTP explicados. (2021). Retrieved from https://www.dotcom-monitor.com/wiki/es/knowledge-base/http-status-codes/#:~:text=200%3A%20OK,DELETE%2C%20OPTIONS%2C%20TRACE</p>
+        <p>Fernández, E. C. (2024). Estas son las etiquetas obsoletas en HTML5: ¡Actualízate!: Tokio. Retrieved from https://www.tokioschool.com/noticias/etiquetas-obsoletas-html5/</p>
+        <p>León, D. P. de. (n.d.). Retrieved from https://www.htmlquick.com/es/tutorials/tables.html</p>
+        <p>Formularios (1). (n.d.). Retrieved from https://www.mclibre.org/consultar/htmlcss/html/html-formularios.html#:~:text=En%20HTML%205%20se%20a%C3%B1adieron%20los%20controles%3A%20bot%C3%B3n%20general%20%3Cinput,%3Cinput%20type%3D%22color%22</p>
+        <p>(N.d.). Retrieved from https://flanagan.ugr.es/docencia/2005-2006/2/apuntes/ciclovida.pdf</p>
+        <p></p>
+        <p></p>
+    </footer>

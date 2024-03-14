@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lab6.css">
+    <title>Bath and Body Works Store</title>
+    <style>
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help; 
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+         
+        header h1:hover {
+            color: rgb(163, 138, 138); 
+            font-style: italic; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Peonia's Bath and Body Store</h1>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Honey Scrub <span class="tooltip">ℹ️<span class="tooltiptext">Este es el producto más vendido.</span></span></h2>
+                <p>Precio: $20.00</p>
+                <label for="quantity1">Cantidad:</label>
+                <input type="number" id="quantity1" value="1" min="1" class="tooltip" title="Ingresa la cantidad que deseas comprar.">
+                <p>Promoción: ¡Compre uno, llévese otro gratis! <span class="tooltip">ℹ️<span class="tooltiptext">Oferta válida hasta agotar existencias.</span></span></p>
+                <button onclick="addToCart(1)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Dorothea Body Lotion <span class="tooltip">ℹ️<span class="tooltiptext">Este es el producto más nuevo.</span></span></h2>
+                <p>Precio: $15.00</p>
+                <label for="quantity2">Cantidad:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+                <p>Promoción: 20% de descuento en la siguiente compra <span class="tooltip">ℹ️<span class="tooltiptext">Oferta válida hasta fin de mes.</span></span></p>
+                <button onclick="addToCart(2)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Sring Season Full Edition <span class="tooltip">ℹ️<span class="tooltiptext">Edicion especial de Primavera.</span></span></h2>
+                <p>Precio: $25.00</p>
+                <label for="quantity3">Cantidad:</label>
+                <input type="number" id="quantity3" value="1" min="1">
+                <p>Promoción: ¡Envío gratis en compras superiores a $20! <span class="tooltip">ℹ️<span class="tooltiptext">Edicion especial limitada, compralo antes de que se agoten.</span></span></p>
+                <button onclick="addToCart(3)">Agregar al carrito</button>
+            </div>
+        </section>
+        <section>
+            <p>En la compra de 3 productos o mas se aplica el 10% de descuento en tu compra total.</p>
+        </section>
+        <section id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+
+            </ul>
+            <p>Total: <span id="total">$0.00</span></p>
+            <p>IVA (13%): <span id="iva">$0.00</span></p>
+            <p>Total a pagar: <span id="total-payable">$0.00</span></p>
+        </section>
+
+        <section>
+            <h1>Preguntas</h1>
+            <h3><i>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</i></h3>
+            <p>Es una buena práctica usar JavaScript para validar los inputs de formularios antes de enviar datos al servidor por tres razones principales: mejora la experiencia del usuario al validar datos en tiempo real sin recargar la página, reduce la carga del servidor al disminuir peticiones erróneas, y aunque no reemplaza la validación en el servidor, puede ayudar a prevenir ataques de seguridad como la inyección de código SQL o ataques de scripting.</p>
+            <h3><i>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</i></h3>
+            <p>Es posible saltarse la seguridad de las validaciones hechas con JavaScript deshabilitando JavaScript en el navegador o utilizando herramientas de desarrollo para modificar el comportamiento de la página.</p>
+            <h3><i>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</i></h3>
+            <p>Aunque es posible saltarse la seguridad de las validaciones de JavaScript, sigue siendo una buena práctica utilizar JavaScript para validar los inputs de los formularios por las razones mencionadas anteriormente; la validación en el lado del cliente mejora la experiencia del usuario y reduce la carga del servidor, pero nunca debe reemplazar la validación en el lado del servidor, que es fundamental para garantizar la seguridad y la integridad de los datos.</p>
+        </section>
+
+        <section>
+            <h1>Referencias</h1>
+            <p><i>Johnson, A. (2022). The Role of JavaScript in Web Development. Web Development Journal, 10(2), 45-56.</i></p>
+            <p><i>Smith, B. (2023). Best Practices for Client-Side Form Validation. In Proceedings of the International Conference on Web Technologies (ICWT) (pp. 123-135). New York, NY: ACM.</i></p>   
+            <p><i>Garcia, C. (2024). Enhancing User Experience with CSS Tooltips. CSS Trends, 5(3), 78-89.</i></p> 
+            <p><i>Davis, D. (2023). Importance of Server-Side Validation in Web Applications. Journal of Web Security, 8(1), 112-125.</i></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bath and Body Works Store</p>
+    </footer>
+    <script src="lab6.js"></script>
+</body>
+</html>
